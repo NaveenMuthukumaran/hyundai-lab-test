@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2023-05-26T02:06:03.567+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/mysite/settings/wcm/templates/my-template"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Hyundai Home"
+        sling:resourceType="mysite/components/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="mysite/components/container"
+            layout="responsiveGrid">
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="mysite/components/container"
+                layout="responsiveGrid">
+                <customtext
+                    jcr:lastModified="{Date}2023-05-26T01:36:11.173+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="mysite/components/customText"
+                    customtext="&lt;h1>Hyundai AEM Technical Lab Test&lt;/h1>&#xd;&#xa;&lt;ul>&#xd;&#xa;&lt;li>Display Page Title using servlet&lt;/li>&#xd;&#xa;&lt;li>Create a Multifield Component with Dynamic Dropdown Field&lt;/li>&#xd;&#xa;&lt;li>Create a component to support Image and Video&amp;nbsp;&lt;/li>&#xd;&#xa;&lt;li>Create a Title Component to support RTE&lt;/li>&#xd;&#xa;&lt;/ul>&#xd;&#xa;"
+                    textIsRich="true"/>
+                <imageandvideo
+                    jcr:lastModified="{Date}2023-05-26T01:56:55.128+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="mysite/components/imageAndVideo"
+                    fileReference="/content/dam/mysite/sample-image.jpg"/>
+                <imageandvideo_1970290222
+                    jcr:lastModified="{Date}2023-05-26T02:05:30.914+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="mysite/components/imageAndVideo"
+                    fileReference="/content/dam/mysite/samplevideo.mp4"/>
+                <multifieldcomponent
+                    jcr:lastModified="{Date}2023-05-26T02:06:03.561+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="mysite/components/multifieldComponent">
+                    <multifieldTab jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            country="india"
+                            state="tamilnadu"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            country="usa"
+                            state="nevada"/>
+                    </multifieldTab>
+                </multifieldcomponent>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>

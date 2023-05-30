@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Content-Package-Id: my_packages:final-components-part1
+Content-Package-Roots: /content/mysite/us/en/test-page,/apps/mysite/comp
+ onents/customText,/etc/acs-commons/lists/statelist,/etc/acs-commons/lis
+ ts/countrylist,/apps/mysite/components/page,/content/mysite/us/en/hyund
+ ai-home,/content/dam/mysite,/apps/mysite/clientlibs/clientlib-base,/con
+ f/mysite/settings/wcm/templates/my-template,/apps/mysite/components/mul
+ tifieldComponent,/apps/mysite/components/imageAndVideo
+Content-Package-Type: mixed
+

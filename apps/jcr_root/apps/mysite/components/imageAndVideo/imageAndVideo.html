@@ -1,0 +1,14 @@
+<div class="cmp-text">
+    <sly data-sly-use.imageModel="com.mysite.core.models.ImageAndVideo"/>
+    	<sly data-sly-test="${!imageModel.fileReference}">
+            <h4>Image and Video Component</h4>
+    	</sly>
+        <sly data-sly-test="${!imageModel.isVideo}">
+            <img style="display: block; margin-left: auto; margin-right: auto; width: 50%" src="${properties.fileReference}"/>
+        </sly>
+            <sly data-sly-test="${imageModel.isVideo}">
+                <center><video width="320" height="240" controls>
+                    <source src="${properties.fileReference}" type="video/mp4">
+                    </video></center>
+        	</sly>
+</div>

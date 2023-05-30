@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/mysite/components/multifieldComponent"/>
+    <filter root="/apps/mysite/components/imageAndVideo"/>
+    <filter root="/apps/mysite/components/customText"/>
+    <filter root="/etc/acs-commons/lists/statelist"/>
+    <filter root="/etc/acs-commons/lists/countrylist"/>
+    <filter root="/content/mysite/us/en/test-page"/>
+    <filter root="/content/mysite/us/en/hyundai-home"/>
+    <filter root="/content/dam/mysite"/>
+    <filter root="/conf/mysite/settings/wcm/templates/my-template"/>
+    <filter root="/apps/mysite/components/page"/>
+    <filter root="/apps/mysite/clientlibs/clientlib-base"/>
+</workspaceFilter>
