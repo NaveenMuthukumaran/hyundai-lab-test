@@ -1,0 +1,46 @@
+Manifest-Version: 1.0
+Bundle-Category: My Site
+Bundle-Description: Core bundle for My Site
+Bundle-ManifestVersion: 2
+Bundle-Name: My Site - Core
+Bundle-SymbolicName: mysite.core
+Bundle-Version: 1.0.0.SNAPSHOT
+Export-Package: com.mysite.core.filters;version="1.0";uses:="javax.ser
+ vlet",com.mysite.core.listeners;version="1.0";uses:="org.apache.sling
+ .api.resource.observation",com.mysite.core.models;version="1.0";uses:
+ ="javax.annotation,org.apache.sling.api.resource,org.apache.sling.mod
+ els.annotations,org.apache.sling.models.annotations.injectorspecific"
+ ,com.mysite.core.schedulers;version="1.0",com.mysite.core.servlets;ve
+ rsion="1.0";uses:="javax.servlet,org.apache.sling.api,org.apache.slin
+ g.api.servlets"
+Import-Package: javax.annotation;version="0.0.0",com.adobe.granite.ui.
+ components.ds;version="[1.3,2)",com.day.cq.wcm.api;version="[1.29,2)"
+ ,com.mysite.core.filters;version="[1.0,2)",com.mysite.core.listeners;
+ version="[1.0,2)",com.mysite.core.schedulers;version="[1.0,2)",com.my
+ site.core.servlets;version="[1.0,2)",javax.inject;version="[1.0,2)",j
+ avax.servlet;version="[2.6,3)",org.apache.sling.api;version="[2.3,3)"
+ ,org.apache.sling.api.request;version="[2.7,3)",org.apache.sling.api.
+ resource;version="[2.13,3)",org.apache.sling.api.resource.observation
+ ;version="[1.2,2)",org.apache.sling.api.servlets;version="[2.3,3)",or
+ g.apache.sling.api.wrappers;version="[2.8,3)",org.apache.sling.models
+ .annotations;version="[1.5,2)",org.apache.sling.models.annotations.in
+ jectorspecific;version="[1.1,2)",org.slf4j;version="[1.7,2)"
+Provide-Capability: osgi.service;objectClass:List<String>="java.lang.R
+ unnable",osgi.service;objectClass:List<String>="javax.servlet.Filter"
+ ;uses:="javax.servlet",osgi.service;objectClass:List<String>="javax.s
+ ervlet.Servlet";uses:="javax.servlet",osgi.service;objectClass:List<S
+ tring>="org.apache.sling.api.resource.observation.ResourceChangeListe
+ ner";uses:="org.apache.sling.api.resource.observation"
+Require-Capability: osgi.extender;filter:="(&(osgi.extender=osgi.compo
+ nent)(version>=1.5.0)(!(version>=2.0.0)))",osgi.ee;filter:="(&(osgi.e
+ e=JavaSE)(version=1.8))"
+Service-Component: OSGI-INF/com.mysite.core.filters.LoggingFilter.xml,
+ OSGI-INF/com.mysite.core.listeners.SimpleResourceListener.xml,OSGI-IN
+ F/com.mysite.core.schedulers.SimpleScheduledTask.xml,OSGI-INF/com.mys
+ ite.core.servlets.CustomServlet.xml,OSGI-INF/com.mysite.core.servlets
+ .DropdownServlet.xml,OSGI-INF/com.mysite.core.servlets.SimpleServlet.
+ xml
+Sling-Model-Classes: com.mysite.core.models.CountryState,com.mysite.co
+ re.models.CountryStateModel,com.mysite.core.models.HelloWorldModel,co
+ m.mysite.core.models.ImageAndVideo
+
